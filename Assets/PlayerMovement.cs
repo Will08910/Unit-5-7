@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public AudioSource moan;
+
     public float moveSpeed = 5f;
 
     public float jumpForce = 5f;
@@ -36,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
 
         rb.MovePosition(transform.position + move * moveSpeed * Time.deltaTime);
+
+        
 
     }
 
