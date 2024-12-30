@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public AudioSource moan;
 
-    public float moveSpeed = 5f;
+    public float moveSpeed = 8f;
 
     public float jumpForce = 5f;
 
@@ -28,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
         HandleMovement();
 
         HandleJump();
+
+        Sprint();
     }
 
     void HandleMovement()
@@ -50,6 +51,19 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
+    }
+
+    public void Sprint()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            moveSpeed = 20f;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            moveSpeed = 8f;
         }
     }
 }
