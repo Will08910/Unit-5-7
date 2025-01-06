@@ -3,7 +3,8 @@ using UnityEngine;
 public class Cameraposmover : MonoBehaviour
 {
     public Animator animator; // Animator component to control animations
-    public GameObject canvas;
+    public GameObject Canvas;
+    public GameObject Canvas2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,7 +36,8 @@ public class Cameraposmover : MonoBehaviour
         {
             animator.SetTrigger("ArmourySelected");
             Debug.Log("ArmourySelected trigger set!");
-            canvas.SetActive(false);
+            Canvas.SetActive(false);
+            Canvas2.SetActive(true);
         }
     }
 }
