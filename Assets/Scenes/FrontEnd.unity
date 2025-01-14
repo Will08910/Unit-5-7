@@ -8750,7 +8750,7 @@ GameObject:
   - component: {fileID: 174662284}
   m_Layer: 5
   m_Name: SFX
-  m_TagString: Untagged
+  m_TagString: SFX Slider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8828,7 +8828,19 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1836355334}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &174824370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4242749377623692421, guid: 397e71ac2fe4f4d959524578cfabd45b, type: 3}
@@ -9243,8 +9255,8 @@ GameObject:
   - component: {fileID: 207151301}
   - component: {fileID: 207151300}
   m_Layer: 5
-  m_Name: Dropdown
-  m_TagString: Untagged
+  m_Name: Dropdown1
+  m_TagString: Dropdown1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9335,7 +9347,19 @@ MonoBehaviour:
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1836355334}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &207151301
 MonoBehaviour:
@@ -17383,7 +17407,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1857482523}
-        m_TargetAssemblyTypeName: Tutorial, Assembly-CSharp
+        m_TargetAssemblyTypeName: Back, Assembly-CSharp
         m_MethodName: Run
         m_Mode: 1
         m_Arguments:
@@ -17392,6 +17416,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: SampleScene
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1836355334}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &605414754
@@ -17672,7 +17708,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 613962608}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16d3f0a2e3619a341a18f0b44ae308c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 51e09bb16bf22594ea09748288dc5966, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   settings: {fileID: 1566702411}
@@ -20872,7 +20908,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1219090818}
-        m_TargetAssemblyTypeName: Tutorial, Assembly-CSharp
+        m_TargetAssemblyTypeName: Back, Assembly-CSharp
         m_MethodName: Run
         m_Mode: 1
         m_Arguments:
@@ -20881,6 +20917,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: SampleScene
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1836355334}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &807321783
@@ -23097,7 +23145,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 912348867}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1658b66e7bf30c145989919e5afcb27a, type: 3}
+  m_Script: {fileID: 11500000, guid: 46a7d3011a0600647b742b6a616bb5bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Canvas: {fileID: 1566702411}
@@ -23447,7 +23495,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 939074288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77f926502f95f8242958ca9420b704f2, type: 3}
+  m_Script: {fileID: 11500000, guid: b91721a0fe4134240b7c258aea3ea375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &949245757
@@ -31565,6 +31613,52 @@ Transform:
   - {fileID: 1916937960}
   m_Father: {fileID: 993401209}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1111678084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1111678086}
+  - component: {fileID: 1111678087}
+  m_Layer: 0
+  m_Name: PlayerPrefs drop down
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1111678086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111678084}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 519.5733, y: 210.195, z: 366.0609}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1111678087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111678084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa6e7866054c55c4e8d36bac301e7ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdown1: {fileID: 207151300}
+  dropdown2: {fileID: 1550972528}
 --- !u!1 &1112219314
 GameObject:
   m_ObjectHideFlags: 0
@@ -33957,7 +34051,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1846330527}
-        m_TargetAssemblyTypeName: Tutorial, Assembly-CSharp
+        m_TargetAssemblyTypeName: Back, Assembly-CSharp
         m_MethodName: Run
         m_Mode: 1
         m_Arguments:
@@ -34063,7 +34157,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1219090816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1658b66e7bf30c145989919e5afcb27a, type: 3}
+  m_Script: {fileID: 11500000, guid: 46a7d3011a0600647b742b6a616bb5bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Canvas: {fileID: 356707297}
@@ -34153,7 +34247,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 912348869}
-        m_TargetAssemblyTypeName: Tutorial, Assembly-CSharp
+        m_TargetAssemblyTypeName: Back, Assembly-CSharp
         m_MethodName: Run
         m_Mode: 1
         m_Arguments:
@@ -34162,6 +34256,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: SampleScene
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1836355334}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1225574385
@@ -34500,7 +34606,19 @@ MonoBehaviour:
   m_Value: 0.001
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1836355334}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1243591894
 GameObject:
   m_ObjectHideFlags: 0
@@ -34698,7 +34816,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1262054936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8669fba12959cd249862217ff321d704, type: 3}
+  m_Script: {fileID: 11500000, guid: 47fa3d39495ef0f429d702eebe32136a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1265799032
@@ -43915,18 +44033,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1836355334}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &1476829848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45579,8 +45685,8 @@ GameObject:
   - component: {fileID: 1550972529}
   - component: {fileID: 1550972528}
   m_Layer: 5
-  m_Name: Dropdown (1)
-  m_TagString: Untagged
+  m_Name: Dropdown2
+  m_TagString: Dropdown2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45669,7 +45775,19 @@ MonoBehaviour:
       m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1836355334}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1550972529
 MonoBehaviour:
@@ -45891,7 +46009,7 @@ GameObject:
   - component: {fileID: 1566702413}
   - component: {fileID: 1566702412}
   m_Layer: 5
-  m_Name: Settings
+  m_Name: Settings (ALWAYS HAVE ENABLED OR NOT FUNCTIONAL!!!)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47456,7 +47574,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1681783949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1658b66e7bf30c145989919e5afcb27a, type: 3}
+  m_Script: {fileID: 11500000, guid: e9feb2619e2e41d498efa3bb98730000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Canvas: {fileID: 613962608}
@@ -53527,13 +53645,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1807358677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6dae7bf3c159444c8f56b055706285e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a57eb7627c7bb54189d40a6cc5060a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
   - {fileID: 8300000, guid: d5de5e4cd6637a947bb2071408695953, type: 3}
   - {fileID: 8300000, guid: a3563323d21c1ad49951077f520f424d, type: 3}
   volumeSlider: {fileID: 1243048493}
+  SFXSlider: {fileID: 174662284}
 --- !u!1 &1811220043
 GameObject:
   m_ObjectHideFlags: 0
@@ -53728,8 +53847,8 @@ GameObject:
   - component: {fileID: 1836355335}
   - component: {fileID: 1836355334}
   m_Layer: 0
-  m_Name: Audio Source
-  m_TagString: Untagged
+  m_Name: SFXAudioSource
+  m_TagString: SFXAudioSource
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54035,11 +54154,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1846330525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1658b66e7bf30c145989919e5afcb27a, type: 3}
+  m_Script: {fileID: 11500000, guid: 46a7d3011a0600647b742b6a616bb5bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 613962608}
-  Canvas2: {fileID: 1566702411}
+  Canvas: {fileID: 1566702411}
+  Canvas2: {fileID: 613962608}
 --- !u!4 &1847964885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2554354205711106362, guid: b1464a6ddbe8f4d6fae0a4ec0e58c5ed, type: 3}
@@ -54349,7 +54468,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1857482521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1658b66e7bf30c145989919e5afcb27a, type: 3}
+  m_Script: {fileID: 11500000, guid: 46a7d3011a0600647b742b6a616bb5bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Canvas: {fileID: 520586977}
@@ -60247,3 +60366,4 @@ SceneRoots:
   - {fileID: 1807358679}
   - {fileID: 4617638592861821956}
   - {fileID: 1836355335}
+  - {fileID: 1111678086}

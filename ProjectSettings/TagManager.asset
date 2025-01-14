@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - VolumeSlider
+  - SFX Slider
+  - SFXAudioSource
+  - Dropdown1
+  - Dropdown2
   layers:
   - Default
   - TransparentFX
