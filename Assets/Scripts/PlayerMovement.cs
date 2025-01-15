@@ -1,69 +1,68 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    public float moveSpeed = 8f;
-
-    public float jumpForce = 5f;
-
+    public GameObject George;
+    public float walkSpeed = 8f;
+    public float sprintSpeed = 16f;
+    private float currentSpeed;
     private Rigidbody rb;
-
-    private bool isGrounded;
-
-    public LayerMask groundLayer;
-
-    Animator anim;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        anim = GetComponent<Animator>();
-
+        currentSpeed = walkSpeed;  // Set the initial movement speed to walking speed
+        GeorgeChill();
     }
 
     void Update()
     {
+        HandleSprint();
+    }
+
+    void FixedUpdate()
+    {
         HandleMovement();
-
-        HandleJump();
-
-        Sprint();
     }
 
     void HandleMovement()
     {
+        // Get player input for horizontal and vertical movement (WASD/Arrow Keys)
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
 
+        // Calculate movement direction based on input
         Vector3 move = transform.right * moveX + transform.forward * moveZ;
 
-        rb.MovePosition(transform.position + move * moveSpeed * Time.deltaTime);
-
-        
-
+        // Move the player using MovePosition (scaled by the current speed and Time.deltaTime for frame-rate independence)
+        rb.MovePosition(rb.position + move * currentSpeed * Time.fixedDeltaTime);
     }
 
-    void HandleJump()
+    void HandleSprint()
     {
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, 1.5f, groundLayer);
-
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        }
-    }
-
-    public void Sprint()
-    {
+        // Check if the sprint key is pressed/released
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            moveSpeed = 20f;
+            currentSpeed = sprintSpeed;
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            moveSpeed = 8f;
+            currentSpeed = walkSpeed;
         }
+    }
+
+    IEnumerator HolOn()
+    {
+        yield return new WaitForSeconds(7f);
+        George.SetActive(true);
+    }
+
+    public void GeorgeChill()
+    {
+        George.SetActive(false);
+        StartCoroutine(HolOn());
     }
 }

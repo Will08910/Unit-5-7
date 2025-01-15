@@ -17,6 +17,6 @@ public class KillSwitch : MonoBehaviour
     public void Killswitch()
     {
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 }

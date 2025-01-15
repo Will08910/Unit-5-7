@@ -9,6 +9,7 @@ TagManager:
   - SFXAudioSource
   - Dropdown1
   - Dropdown2
+  - Enemy
   layers:
   - Default
   - TransparentFX
