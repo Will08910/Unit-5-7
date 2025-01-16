@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        Return();
         HandleSprint();
     }
 
@@ -64,5 +66,14 @@ public class PlayerMovement : MonoBehaviour
     {
         George.SetActive(false);
         StartCoroutine(HolOn());
+    }
+
+    void Return()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("FrontEnd");
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 }
